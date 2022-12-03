@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Exercice HTML</title>
+</head>
+
+<body>
+    <!--lien qui renvoi vers section 6-->
+    <a href="#section 6">Lien vers la section 6</a>
+    <!--Tag img-->
+    <img src="#" alt="ma photo">
+    <!--lien en cliquant sur une image-->
+    <a href="">
+        <img src="#" alt="ma photo">
+    </a>
+
+    <!--section 1 comportant 1 titre et un paragraphe et 4 retour à la ligne-->
+    <section id="section 1">
+        <h1>heading 1</h1>
+        <p>Ceci est un long paragraphe dans lequel je vais vous raconter toute ma vie.Tout d'abord, je
+            m'appelle
+            benjamin</p>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <section id="section 6">
+        <h1>heading 6</h1>
+        <p>Ceci est un long paragraphe dans lequel je vais vous raconter toute ma vie.Tout d'abord, je
+            m'appelle
+            benjamin</p>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+    <section>
+        <ul>
+            <!--Tag unordonary list / l'attribut style permet d'injecter du css directement dans le code
+                                HTML-->
+            <li style="color:red">Je me leve</li>
+            <li style="font-size:30px;color:blue; background:yellow;">et je te bouscule</li>
+            <li>Tu ne te réveilles pas</li>
+            <li>comme d'habitude</li>
+            <li>
+                <--une liste dans une liste ordonary list-->
+                    <ol>
+                        <--avec span on peu ciblé un groupe de mot dans un paragraphe-->
+                            <li>Ma main <span style="font-weight:bold">caresse</span> tes cheveux
+                            </li>
+                            <li>Presque malgre moi</li>
+                            <li>Comme d'habitude</li>
+                    </ol>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <!-- les div de différentes tailles-->
+        <div style="background-color: blue; width:50px; height:50px;">
+            <a href="http://www.google.com">lien vers google</a>
+        </div>
+        <div style="background-color: brown;width:50px; height:50px">
+            <h1>Mon site web</h1>
+        </div>
+        <div style="background-color:chartreuse; width:100px; height:100px">
+            <ul>
+                <li>chat</li>
+                <li>éléphant</li>
+            </ul>
+        </div>
+    </section>
+    <!--Formulaire-->
+    <section>
+        <form>
+            <label for="firstName">Nom:</label>
+            <input type="text" name="firstName" placeholder="Veuillez saisir votre nom">
+            <!---->
+            <textarea name="textarea" id="textarea1" cols="50" rows="20"></textarea>
+            <br>
+            <input type="checkbox" name="velo" id="checkBycicle" value="velo">Velo
+            <input type="checkbox" name="voiture" id="checkCar" value="voiture" checked>Voiture
+            <input type="checkbox" name="autobus" id="checkRun" value="Autobus">Autobus
+            <br>
+            <input type="radio" name="sexe" id="radioMr" value="Monsieur">Monsieur
+            <input type="radio" name="sexe" id="radioMme" value="Madame">Madame
+            <br>
+        </form>
+    </section>
+    <section>
+        <!--Liste déroulante-->
+        <select name="voiture" id="selectCar">
+            <option value="Peugeot">Peugeot</option>
+            <option value="Renault">Renault</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Citroën">Citroën</option>
+            <option value="Audi">Audi</option>
+        </select>
+        <form>
+            <input type="submit" value="Valider">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
