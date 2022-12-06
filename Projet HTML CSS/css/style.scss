@@ -1,2 +1,90 @@
 @import 'scss/special_sommaire.scss';
 @import 'scss/article.scss';
+@import 'scss/fonts.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation */
+header {
+    height: 120px;
+}
+
+nav {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.baniere {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .baniere h1 {
+    padding-left: 50px;
+    box-sizing: border-box;
+    display: inline-flex;
+
+    font-size: 48px;
+    font-family: 'Crete Round', serif;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav ul li {
+    text-align: center;
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    padding-right: 20px;
+}
+
+.section-image {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.image-ban {
+    margin: 0 auto;
+}
+
+.section-card {
+    display: flex;
+    flex-wrap: wrap;
+    height: 360px;
+}
+
+.container-card {
+
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.container-textcard {
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
