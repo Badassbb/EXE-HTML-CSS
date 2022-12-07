@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    flex-basis: 100%;
+}
+
+aside {
+    flex-basis: 25%;
+}
+
+.content {
+    flex-basis: 75%;
+
+}
+
+.tab {}
