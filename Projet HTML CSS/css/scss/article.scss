@@ -1,19 +1,79 @@
-body {
+
+.topofpage {
+    height: 2150px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.side_1 {
+
+    box-sizing: border-box;
+    height: 2150px;
+    width: 300px;
+    background-color: red;
+}
+.side {
+    padding: 10px;
+    box-sizing: border-box;
+    height: 2150px;
+    width: 300px;
+    background-color: green;
+    color: white;
+}
+.side p{
+    text-align: justify;
 }
 
-header {
-    flex-basis: 100%;
+.tab{
+    margin: 10px;
+}
+.content{
+    width: 814px;
 }
 
-aside {
-    flex-basis: 25%;
+.photo_art img{
+    width: 814px;
 }
 
-.content {
-    flex-basis: 75%;
-
+.ban{
+    display: flex;
+    flex-flow: row;
+    flex-flow: wrap;
+    height: 100px;
+    justify-content: center;
 }
 
-.tab {}
+.cuisine{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    height: 700px;
+    justify-content: space-between;
+
+}
+.recette{
+    width: 814px;
+    height: 700px;
+
+}
+.ingredient{
+    background-color: red;
+    height: 700px;
+    width: 300px;
+
+}
+.link{
+    background-color: green;
+    height: 700px;
+    width: 300px;
+}
+.link ul{
+    list-style: none;
+    padding-top: 30px;
+}
+.link ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+}
