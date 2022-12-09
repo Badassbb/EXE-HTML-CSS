@@ -298,7 +298,8 @@ footer {
   .content img {
     width: 768px;
   }
-  .content h2, p {
+  .content h2,
+p {
     padding-left: 10px;
     padding-right: 10px;
     text-align: justify;
@@ -363,7 +364,8 @@ footer {
   .content img {
     width: 320px;
   }
-  .content h2, p {
+  .content h2,
+p {
     padding-left: 10px;
     padding-right: 10px;
     text-align: justify;

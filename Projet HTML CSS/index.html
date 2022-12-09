@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -17,39 +17,50 @@
 <body>
     <header>
         <picture>
-            <img src="/images/Carte italie region 50px.png" alt="carte région italie">
+            <img src="images/carte-italie-region-50px.png" alt="carte région italie">
         </picture>
 
         <h1>Florence</h1>
 
         <nav>
             <ul class="menu">
-                <li><a href="/index.html">Accueil</a></li>
-                <li class="déroulant"><a href="/html/florence.html">Florence</a>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="déroulant"><a href="html/florence.html">Florence</a>
                     <ul class="sous">
                         <li><a href="#histoire">histoire</a></li>
                         <li><a href="#cuisine">cuisine</a></li>
                         <li><a href="#recette">Pappardelle</a></li>
                     </ul>
                 </li>
-
-                <li><a href="/html/milan.html">Milan</a></li>
-                <li><a href="/html/verone.html">Verone</a></li>
+                <li class="déroulant"><a href="html/milan.html">Milan</a>
+                    <ul class="sous">
+                        <li><a href="#histoire">histoire</a></li>
+                        <li><a href="#cuisine">cuisine</a></li>
+                        <li><a href="#recette">Pappardelle</a></li>
+                    </ul>
+                </li>
+                <li class="déroulant"><a href="html/verone.html">Verone</a>
+                    <ul class="sous">
+                        <li><a href="#histoire">histoire</a></li>
+                        <li><a href="#cuisine">cuisine</a></li>
+                        <li><a href="#recette">Pappardelle</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <section class="section-image">
-        <img srcset="/images/mapmobile.png 320w, /images/mapdesktop.png 768w, /images/mapultra.png 940w" sizes="(max-width: 320px) 320px, (max-width:768px) 768px, (max-width:1440px) 940px"
-        
-        src="/images/mapdesktop.png" alt="map italie vue de l'espace">
-    </section>
+    <div class="section-image">
+        <img srcset="images/mapmobile.png 320w, images/mapdesktop.png 768w, images/mapultra.png 940w"
+            sizes="(max-width: 320px) 320px, (max-width:768px) 768px, (max-width:1440px) 940px"
+            src="images/mapdesktop.png" alt="map italie vue de l'espace">
+    </div>
 
-    <section class="section-card">
+    <div class="section-card">
 
         <div class="container-card">
             <div class="container-textcard">
-                <a href="html/florence.html"><img class="imagecard" src="/images/florence_city_flag 150px.png"
+                <a href="html/florence.html"><img class="imagecard" src="images/florence-city-flag-150px.png"
                         alt=""></a>
                 <div>
                     <h4>Florence</h4>
@@ -63,7 +74,7 @@
         </div>
         <div class="container-card">
             <div class="container-textcard">
-                <a href="html/milan.html"><img class="imagecard" src="/images/drapeau milan 150px.png" alt=""></a>
+                <a href="html/milan.html"><img class="imagecard" src="images/drapeau-milan-150px.png" alt=""></a>
                 <h4>Milan</h4>
                 <p>Milan, métropole de la région de la Lombardie, au nord de l'Italie, est une capitale mondiale de la
                     mode et du design. Ce centre financier, siège de la Bourse d'Italie, est également connu pour ses
@@ -74,7 +85,7 @@
         </div>
         <div class="container-card">
             <div class="container-textcard">
-                <a href="html/verone.html"><img class="imagecard" src="/images/Verona-Stemma.png" alt=""></a>
+                <a href="html/verone.html"><img class="imagecard" src="images/Verona-Stemma.png" alt=""></a>
                 <div>
                     <h4>Verone</h4>
                     <p>Vérone est une ville située dans la région de la Vénétie au nord de l'Italie, avec en son cœur
@@ -86,7 +97,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <footer>
         <div class="footer1"></div>
         <div class="footer2"></div>
