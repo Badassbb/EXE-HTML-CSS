@@ -165,8 +165,7 @@ header {
 }
 
 header h1 {
-  padding-left: 50px;
-  flex-basis: 120px;
+  flex-basis: 150px;
   flex-shrink: 0;
   height: 30px;
   width: auto;
@@ -179,17 +178,15 @@ header h1 {
 .menu {
   display: flex;
   flex-direction: row;
-  margin-right: 50px;
   list-style: none;
   height: 50px;
-  border: 1px solid brown;
   align-items: center;
 }
 
 .menu li a {
   color: black;
   text-decoration: none;
-  padding-left: 10px;
+  padding-left: 5px;
   padding-right: 20px;
 }
 
@@ -199,15 +196,6 @@ header img {
 }
 
 /* SECTION IMAGE BLOCK*/
-.columns {
-  display: flex;
-  align-items: flex-start;
-}
-
-.columns img {
-  width: 33, 33%;
-}
-
 .section-image {
   height: 460px;
   width: 100%;
@@ -251,61 +239,171 @@ header img {
 
 footer {
   display: flex;
-  height: 120px;
+  flex-direction: row;
+  height: 80px;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
 }
 
 .footer1 {
-  display: inline-flex;
+  flex-grow: 1;
   height: 80px;
-  width: 300px;
-  background-color: blue;
-  border-radius: 15px;
+  background-color: rgb(255, 0, 0);
   color: white;
-  align-items: center;
-  justify-content: center;
+  border: 0.5px solid darkred;
 }
 
 .footer2 {
-  display: flex;
+  flex-grow: 1;
   height: 80px;
-  width: 300px;
-  background-color: blue;
-  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
   color: white;
-  align-items: center;
-  justify-content: center;
+  border: 0.5px solid rgb(155, 155, 155);
 }
 
 .footer3 {
-  display: flex;
+  flex-grow: 1;
   height: 80px;
-  width: 300px;
-  background-color: blue;
-  border-radius: 15px;
+  background-color: rgb(4, 105, 0);
   color: white;
-  align-items: center;
-  justify-content: center;
+  border: 0.5px solid darkgreen;
 }
 
 @media screen and (max-width: 768px) {
+  /* Page sommaire */
   .section-card {
     height: 600px;
   }
   .container-textcard {
-    display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    height: 300px;
-    width: 200px;
+    height: 600px;
     font-size: 12px;
+  }
+  /* Page article */
+  .topofpage {
+    height: 2305px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+  .content {
+    order: 1;
+    width: 768px;
+  }
+  .content img {
+    width: 768px;
+  }
+  .content h2, p {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .side {
+    order: 0;
+    font-size: 14px;
+    height: 420px;
+    width: 468px;
+  }
+  .side_1 {
+    order: 0;
+    height: 420px;
+  }
+  .cuisine {
+    height: 850px;
+  }
+  .recette {
+    height: 750px;
+    width: 468px;
+  }
+  .recette p {
+    font-size: 14px;
+  }
+  .ingredient {
+    height: 750px;
+  }
+  .link {
+    height: 100px;
+    width: 768px;
+  }
+  .link ul {
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* Page sommaire */
+  .section-card {
+    height: 2000px;
+  }
+  .section-image {
+    height: 220px;
+  }
+  .container-textcard h4 {
+    font-size: 16px;
+  }
+  /* Page article */
+  .topofpage {
+    height: 4850px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+  .content {
+    order: 1;
+    width: 320px;
+  }
+  .content img {
+    width: 320px;
+  }
+  .content h2, p {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .side {
+    order: 0;
+    font-size: 14px;
+    height: 420px;
+    width: 320px;
+  }
+  .side_1 {
+    order: 0;
+    height: 360px;
+    width: 320px;
+  }
+  .cuisine {
+    height: 1870px;
+  }
+  .recette {
+    order: -1;
+    height: 1100px;
+    width: 468px;
+  }
+  .recette p {
+    font-size: 14px;
+  }
+  .ingredient {
+    padding: 10px;
+    height: 650px;
+    width: 320px;
+  }
+  .link {
+    height: 100px;
+    width: 768px;
+  }
+  .link ul {
+    padding-top: 10px;
   }
 }
 
