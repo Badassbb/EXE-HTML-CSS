@@ -13,8 +13,11 @@
 a {
     text-decoration: none;
 }
-table, th, td{
-    background-color: rgba(255,255,255,0.3);
+
+table,
+th,
+td {
+    background-color: rgba(255, 255, 255, 0.3);
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
@@ -23,31 +26,25 @@ table, th, td{
 /* HEADER MENU*/
 header {
     height: 120px;
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-   
 }
 
-header img{
-    justify-content: center;
+header h1 {
     padding-left: 50px;
-}
-
-
-.titre-menu h1 {
+    flex-basis: 120px;
+    flex-shrink: 0;
     height: 30px;
-    width: 320px;
+    width: auto;
     text-transform: uppercase;
     font-family: 'Crete round', serif;
     font-size: 30px;
     text-align: center;
-    margin-left: 30px;
-    margin-right: 20px;
 }
 
 .menu {
@@ -67,7 +64,13 @@ header img{
     padding-right: 20px;
 }
 
+header img {
+    justify-content: center;
+    padding-left: 50px;
+}
+
 /* SECTION IMAGE BLOCK*/
+
 .section-image {
     height: 460px;
     width: 100%;
@@ -76,10 +79,11 @@ header img{
     justify-content: center;
     align-items: center;
 }
-.section-image div{
-    height: 460px;
-    width: 940px;
-}
+
+// .section-image div {
+//     height: 460px;
+//     width: 1440px;
+// }
 
 .section-card {
     height: 1024px;
@@ -163,7 +167,8 @@ footer {
 @media screen and (max-width: 768px) {
     .section-card {
         height: 600px;
-        }
+    }
+
     .container-textcard {
         display: inline-block;
         margin-left: 10px;
@@ -174,7 +179,7 @@ footer {
         height: 300px;
         width: 200px;
         font-size: 12px;
-    
+
     }
-    
+
 }
