@@ -1,34 +1,39 @@
 /*SOUS MENU*/
-.sous{
-    display:none;
+.sous {
+    display: none;
     box-shadow: 0px 1px 2px #ccc;
     background-color: red;
 }
 
-nav > ul li:hover .sous{
+nav>ul li:hover .sous {
     display: block;
 }
 
-.sous li{
+
+.sous li {
     list-style: none;
     float: none;
     width: 100%;
     text-align: left;
 }
-.sous a{
-    padding: 10px;
-    border-bottom: none ;
-}
-.sous a:hover{
+
+.sous a {
+    padding: 2px;
     border-bottom: none;
-    background-color: rgba(200,200,200,0.1);
 }
-.déroulant > a::after{
-    content:"▼";
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.déroulant>a::after {
+    content: "▼";
     font-size: 12px;
     color: rgba(255, 0, 0, 0.5);
 }
-.sous{
+
+.sous {
     display: none;
     box-shadow: 0px 1px 2px #ccc;
     background-color: white;

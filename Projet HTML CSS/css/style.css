@@ -18,13 +18,23 @@ nav > ul li:hover .sous {
 }
 
 .sous a {
-  padding: 10px;
+  padding: 2px;
   border-bottom: none;
 }
 
 .sous a:hover {
   border-bottom: none;
-  background-color: rgba(200, 200, 200, 0.1);
+  background-color: rgb(255, 0, 0);
+}
+
+.sousb a:hover {
+  border-bottom: none;
+  background-color: rgba(196, 196, 196, 0.9);
+}
+
+.sousc a:hover {
+  border-bottom: none;
+  background-color: rgb(15, 131, 0);
 }
 
 .déroulant > a::after {
@@ -162,6 +172,8 @@ header {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  margin-left: 20PX;
+  margin-right: 20PX;
 }
 
 header h1 {
@@ -340,6 +352,9 @@ p {
 }
 @media screen and (max-width: 320px) {
   /* Page sommaire */
+  header {
+    margin-left: 0px;
+  }
   .section-card {
     height: 2000px;
   }

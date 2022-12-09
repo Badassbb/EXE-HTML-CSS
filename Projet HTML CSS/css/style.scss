@@ -33,6 +33,8 @@ header {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    margin-left: 20PX;
+    margin-right: 20PX;
 }
 
 header h1 {
@@ -236,6 +238,11 @@ footer {
 @media screen and (max-width: 320px) {
 
     /* Page sommaire */
+    header {
+        margin-left: 0px;
+
+    }
+
     .section-card {
         height: 2000px;
     }
